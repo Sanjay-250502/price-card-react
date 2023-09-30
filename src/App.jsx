@@ -2,8 +2,7 @@ import Card from "./Card.jsx"
 import {useState} from 'react' 
 
 function App() {
-  let [count,setCount] = useState(0)   //HOOKS- it is a function.
-
+  let [count,setCount] = useState(0)   //HOOKS- it is a function. Here count-->is state variable setCount --> is state function.
   const data =[
     {
       plan:"FREE",
@@ -77,9 +76,7 @@ function App() {
     {
       data.map((e,i)=>{
         return <Card data = {e} key = {i} />
-        
-        {/* sending data to card components via props */}
-        
+        {/* sending data to card components via props */} 
       })
     }
 
